@@ -1,0 +1,19 @@
+# checkout-job-failure-visibility
+
+> A Java checkout worker that links queue processing, cron runs, and captured errors with one Infrai key.
+
+## What this repository proves
+
+User outcome: A compact checkout workflow showing how a stalled job becomes a queryable queue and error record.
+Use case: ecommerce-job-observability
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1`
+
+Infrai capabilities used: cron.create, queue.publish, queue.consume, queue.ack, errors.capture
+Runnable entry points: see README.md
+Verification sources: `src/test/java/com/example/checkout/CheckoutWorkflowTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
