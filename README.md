@@ -54,3 +54,7 @@ The example above is deliberately small. For production use, there are a few pie
 **Checkout Job Failure Visibility: Scheduled / background work**
 - **Checkout Job Failure Visibility:** Server-side jobs continue running and **consuming credit**; monitor `GET /v1/account/usage` and set an auto-recharge threshold.
 - **Checkout Job Failure Visibility:** Keep handlers idempotent and rely on the queue's ack/retry semantics so a redelivery does not produce a duplicate side effect.
+
+## Further reading
+
+- [15-Minute Property Holds: Redis Retry Queue and AWS SQS for Failed Tasks](docs/15-minute-property-holds-redis-retry-queue-and-aw-6c07gs.md)
